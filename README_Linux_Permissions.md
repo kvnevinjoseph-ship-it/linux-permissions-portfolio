@@ -1,42 +1,55 @@
-# Linux File Permissions Portfolio
+# 🌐 Linux File Permissions Portfolio
+
+> **Cybersecurity Portfolio Project — Linux & Authorization Controls**
+
+This project demonstrates my ability to **inspect**, **interpret**, and **modify Linux file permissions** using `ls`, `chmod`, and documented access control principles.  
+It is part of my cybersecurity learning path.
+
+---
+
+## 📁 Project Files
+
+| File | Description |
+|------|-------------|
+| **Linux_File_Permissions_Portfolio.pdf** | Full cybersecurity portfolio (Coursera-ready) |
+| **README_Linux_Permissions.md** | This project documentation |
+
+---
+
+## 📂 Directory Permissions (Before Updating)
+
+Output obtained with:
 
 
-File permissions in Linux
+---
 
-Project description
-As a security professional, my job is to ensure that users on the research team have the correct authorization to access files and directories in the projects directory. Some of the permissions did not match the proper authorization levels, so I inspected the current permissions and updated them.
+## 🔧 Changes Made (Commands Used)
 
-Check file and directory details
-Command used:
-ls -la
+### ✔ Remove write permission for “other”
 
-Output:
-total 32
-drwxr-xr-x 3 researcher2 research_team 4096 Dec 2 15:27 .
-drwxr-xr-x 3 researcher2 research_team 4096 Dec 2 15:27 ..
--rw------- 1 researcher2 research_team 46 Dec 2 15:27 .project_x.txt
-drwxr-x--- 2 researcher2 research_team 4096 Dec 2 15:27 drafts
--rw-rw-r-- 1 researcher2 research_team 46 Dec 2 15:27 project_k.txt
--rw-r----- 1 researcher2 research_team 46 Dec 2 15:27 project_m.txt
--rw-rw-r-- 1 researcher2 research_team 46 Dec 2 15:27 project_r.txt
--rw-rw-r-- 1 researcher2 research_team 46 Dec 2 15:27 project_t.txt
+### ✔ Secure hidden file `.project_x.txt`
 
-Describe the permissions string
-Example: -rw-rw-r--
-- regular file
-rw- user can read/write
-rw- group can read/write
-r-- others can read only
+### ✔ Restrict directory access to only the user
 
-Change file permissions
-chmod o-w project_k.txt
+---
 
-Change hidden file permissions
-chmod u-w .project_x.txt
-chmod g+r .project_x.txt
 
-Change directory permissions
-chmod g-x drafts
+---
 
-Summary
-I used Linux commands to examine and securely update file permissions in the projects directory.
+## 📝 Summary
+
+This project demonstrates Linux security fundamentals:
+
+- Checking file permissions  
+- Understanding permission strings  
+- Applying least-privilege access  
+- Protecting sensitive files  
+- Restricting directory access  
+
+---
+
+## 🔗 Connect with me
+
+- **LinkedIn:** https://www.linkedin.com/in/nevin-joseph-12b606254  
+- **GitHub:** https://github.com/kvnevinjoseph-ship-it
+
